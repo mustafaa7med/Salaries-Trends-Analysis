@@ -1,8 +1,7 @@
-# San Francisco Governmental Based Jobs Salaries
+# San Francisco Governmental-Based Jobs Salaries
 ## Understanding how salaries are in the government of San Francisco and how it differs.
 
-With many states in the US being kinda different from each other especially in terms of salaries, I was courios to analyize the county of California and in particular
-a governmental based jobs.
+With many states in the US being kinda different from each other, especially in terms of salaries, I was curious to analyze the county of California and in particular governmental-based jobs.
 
 
 ### Questions answered in this project
@@ -66,7 +65,7 @@ LIMIT 10;
 | ACCOUNTANT INTERN | 58799.53 |
 
 **Insight:**
-- Half of the top highest paid employees do have an adminstrative role.
+- Half of the top highest paid employees do have an administrative role.
 
 ------------------------------------------------------
 
@@ -92,7 +91,7 @@ ORDER BY Year, AVG_TOTAL_PAY;
 |  2014 | 75464 | 66557 | 5401 | 3505 | 
 
 **Insight:**
-- The average pay rate has increased since 2011 till 2013 yet it declined.
+- The average pay rate has increased from 2011 till 2013 yet it declined.
 - Despite the increase in the average pay rate of overtime yet the base salary itself got declined.
 
 ------------------------------------------------------
@@ -127,9 +126,9 @@ WHERE RANKED_DATA.RNK <= 3;
 |  Asst Med Examiner |   2014 | 344187.46 |
 
 **Insight:**
-- The trend of among top 3 jobs in 2011 and 2014 is fluctuating from top to bottom
-- Yet the salary is kind of on a similar scale in terms of 2012 and 2013
-- Captain III recorded top 2 and 3 highest paid role in 2011 while Asst Med Examiner recorded highest 2 and 3 in 2014
+- The trend among the top 3 jobs in 2011 and 2014 is fluctuating from top to bottom.
+- Yet the salary is kind of on a similar scale in terms of 2012 and 2013.
+- Captain III recorded the top 2 and 3 highest paid roles in 2011 while Asst Med Examiner recorded the highest 2 and 3 in 2014.
 
 ------------------------------------------------------
 
@@ -159,7 +158,7 @@ LIMIT 10;
 | INSPECTOR III, (POLICE DEPARTMENT) | 258588.39 |
 
 **Insight:**
-- Overall both Police and Fire departments do have the highest paid employees.
+- Overall, both Police and Fire departments do have the highest-paid employees.
 ------------------------------------------------------
 
 ## 🔗 Get In Touch
