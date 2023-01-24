@@ -7,16 +7,19 @@ a governmental based jobs.
 
 ### Questions answered in this project
 
-- How the average base, overtime, other and total pay differ?
-- What are the highest paid 10 jobs?
-- How salary trends overtime based on each job title?
-- What are the 3 top highest paid jobs segregated by each year?
-- What are the top paid departments?
+- How do the average base, overtime, other, and total pay differ?
+- What are the highest-paid 10 jobs?
+- How does salary trend over time based on each job title?
+- What are the 3 top highest-paid jobs segregated by each year?
+- What are the top-paid departments?
 
 ### Dataset and Tech Stack
 - You can download the dataset through the following link on Kaggle
 [Kaggle](https://www.kaggle.com/datasets/kaggle/sf-salaries)
 - **Tech Stack:** SQLite
+- **Functionalities:** SELECT, Subqueries, GROUP BY, Analytical SQL (RANK, DENSE_RANK, ROWS BETWEEN, AGGREGATE FUNCTIONS, OVER, PARTITION BY)
+
+------------------------------------------------------
 
 ```sql
 -- How the average base, overtime, other and total pay differ?
@@ -32,7 +35,10 @@ FROM Salaries;
 |     :---:    |     :---:      |     :---:      |     :---:      |
 | 66054        | 5066           |       3649     |  74768         |
 
+**Insight:**
 - Overtime and other pay benefits are not a huge factor in terms of the total pay.
+
+------------------------------------------------------
 
 ```sql
 -- What are the highest paid 10 jobs?
@@ -59,7 +65,10 @@ LIMIT 10;
 | ACCOUNT CLERK | 60838.2 |
 | ACCOUNTANT INTERN | 58799.53 |
 
+**Insight:**
 - Half of the top highest paid employees do have an adminstrative role.
+
+------------------------------------------------------
 
 ```sql
 
@@ -82,8 +91,11 @@ ORDER BY Year, AVG_TOTAL_PAY;
 |  2013 | 77611 | 68510 | 5282 | 3820 | 
 |  2014 | 75464 | 66557 | 5401 | 3505 | 
 
+**Insight:**
 - The average pay rate has increased since 2011 till 2013 yet it declined.
 - Despite the increase in the average pay rate of overtime yet the base salary itself got declined.
+
+------------------------------------------------------
 
 ```sql
 -- What are the 3 top highest paid jobs segregated by each year?
@@ -114,11 +126,12 @@ WHERE RANKED_DATA.RNK <= 3;
 |  Asst Med Examiner |   2014 | 390111.98 |
 |  Asst Med Examiner |   2014 | 344187.46 |
 
-
+**Insight:**
 - The trend of among top 3 jobs in 2011 and 2014 is fluctuating from top to bottom
 - Yet the salary is kind of on a similar scale in terms of 2012 and 2013
 - Captain III recorded top 2 and 3 highest paid role in 2011 while Asst Med Examiner recorded highest 2 and 3 in 2014
 
+------------------------------------------------------
 
 ```sql
 -- What are the top paid departments?
@@ -145,8 +158,9 @@ LIMIT 10;
 | DEPUTY CHIEF III (POLICE DEPARTMENT) | 264074.6 |
 | INSPECTOR III, (POLICE DEPARTMENT) | 258588.39 |
 
+**Insight:**
 - Overall both Police and Fire departments do have the highest paid employees.
-
+------------------------------------------------------
 
 ## 🔗 Get In Touch
 [![Email](https://img.shields.io/badge/Email_Me-000?style=for-the-badge&logo=ko-fi&logoColor=white)](mailto:mustafaa7med@gmail.com)
