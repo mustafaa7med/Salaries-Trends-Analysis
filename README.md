@@ -7,11 +7,11 @@ a governmental based jobs.
 
 ### Questions answered in this project
 
-- How the average base, overtime, other and total pay differ between different job title?
-- What is the highest pay rate in comparison with other job title?
-- What is the avgerage salary among every 3 employees in the same job differ?
-- Ranking top 10 highest paid governmental jobs.
+- How the average base, overtime, other and total pay differ?
+- What are the highest paid 10 jobs?
 - How salary trends overtime based on each job title?
+- What are the 3 top highest paid jobs segregated by each year?
+- What are the top paid departments?
 
 ### Dataset and Tech Stack
 - You can download the dataset through the following link on Kaggle
@@ -19,8 +19,7 @@ a governmental based jobs.
 - **Tech Stack:** SQLite
 
 ```sql
--- How the average base, overtime, other and total pay differ between different job title?
-
+-- How the average base, overtime, other and total pay differ?
 SELECT ROUND(AVG(BasePay)) AS AVG_BASE,
        ROUND(AVG(OvertimePay)) AS AVG_OVERTIME,
        ROUND(AVG(OtherPay)) AS AVG_OTHER,
@@ -36,6 +35,7 @@ FROM Salaries;
 - Overtime and other pay benefits are not a huge factor in terms of the total pay.
 
 ```sql
+-- What are the highest paid 10 jobs?
 SELECT JobTitle, ROUND(TotalPay)
 FROM (SELECT DISTINCT JobTitle,
 					  TotalPay,
@@ -64,7 +64,6 @@ LIMIT 10;
 ```sql
 
 -- How salary trends overtime based on each job title?
-
 SELECT Year, ROUND(AVG(TotalPay)) AS AVG_TOTAL_PAY,
 			 ROUND(AVG(BasePay)) AS AVG_BASE_PAY,
 			 ROUND(AVG(OvertimePay)) AS AVG_OVERTIME_PAY,
@@ -122,6 +121,7 @@ WHERE RANKED_DATA.RNK <= 3;
 
 
 ```sql
+-- What are the top paid departments?
 SELECT DISTINCT JobTitle,
                 MAX(TotalPay) AS MAX_PAY
 FROM Salaries
