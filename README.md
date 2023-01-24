@@ -14,11 +14,21 @@ a governmental based jobs.
 - How salary trends overtime based on each job title?
 
 ### Dataset and Tech Stack
-You can download the dataset through the following link on Kaggle
-[Documentation](https://linktodocumentation)
+- You can download the dataset through the following link on Kaggle
+[Kaggle](https://www.kaggle.com/datasets/kaggle/sf-salaries)
+- **Tech Stack:** SQLite
 
+```sql
+-- How the average base, overtime, other and total pay differ between different job title?
 
-| Left-aligned | Center-aligned |
-|     :---:    |     :---:      |
-| git status   | git status     |
-| git diff     | git diff       |
+SELECT ROUND(AVG(BasePay)) AS AVG_BASE,
+       ROUND(AVG(OvertimePay)) AS AVG_OVERTIME,
+       ROUND(AVG(OtherPay)) AS AVG_OTHER,
+       ROUND(AVG(TotalPay)) AS AVG_TOTAL
+FROM Salaries;
+```
+**Result:**
+
+| AVG_BASE    |  AVG_OVERTIME  |   AVG_OTHER    |   AVG_TOTAL    |
+|     :---:    |     :---:      |     :---:      |     :---:      |
+| git status   | git status     | Center-aligned | Center-aligned |
