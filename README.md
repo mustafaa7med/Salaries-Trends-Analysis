@@ -1,6 +1,5 @@
 # San Francisco Governmental-Based Jobs Salaries
-## Understanding how salaries are in the government of San Francisco and how it differs.
-
+Understanding how salaries are in the government of San Francisco and how it differs.
 With many states in the US being kinda different from each other, especially in terms of salaries, I was curious to analyze the county of California and in particular governmental-based jobs.
 
 
