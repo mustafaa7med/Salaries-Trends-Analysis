@@ -65,6 +65,7 @@ LIMIT 10;
 
 **Insight:**
 - Half of the top highest paid employees do have an administrative role.
+- ADMINISTRATIVE ENGINEER Salary is almost double the salary of any job starting rank 5 to 10 which indicates a high pay gap.
 
 ------------------------------------------------------
 
